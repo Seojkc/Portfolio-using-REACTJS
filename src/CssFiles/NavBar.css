@@ -1,0 +1,63 @@
+
+.containerNavBar{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    z-index: 200 !important;
+}
+
+.scrolled-container-div
+{
+    position: fixed !important;
+    top: 0px !important;
+    height:80px !important;
+    background-color: rgba(0, 0, 0, 0.671) !important;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+.imageLogo{
+    filter: invert(100%);
+    width: 100px;
+    height: 60px;
+
+
+}
+
+.containerNavBar>ul{
+    display: flex;
+    list-style-type: none;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+.containerNavBar>ul>li{
+    text-decoration: none;
+    padding-right: 100px;
+}
+.containerNavBar>ul>li>a{
+    text-decoration: none;
+    font-style: bold;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    transition: text-shadow 0.5s ease;
+
+
+}
+
+.glowLink:hover
+{
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 55px #ff00de, 0 0 75px #ff00de !important;
+}
+
+
+@media (max-width: 800px) {
+    .containerNavBar>ul{
+        display: none;
+    }
+}

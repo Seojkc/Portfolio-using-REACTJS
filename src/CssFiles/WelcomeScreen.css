@@ -1,0 +1,655 @@
+
+.backgroundVideo{
+    width: 100%;
+}
+
+
+.backgroundVideo video{
+    width: 100%;
+    position: relative;
+    z-index: 3 !important;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.007), black 20%); /* Standard syntax */
+    
+}
+
+#video-empty-space{
+  position: absolute;
+}
+
+
+.gitLogoDiv 
+{
+    z-index: 5 !important;
+    position: absolute;
+    top: 150px;
+    left:30px;
+    filter: invert(100%);
+    width: 50px;
+    height: 50px;
+    overflow: hidden; 
+  
+}
+  
+.gitLogoImg {
+width: 100%;
+height: auto;
+transition: box-shadow 0.3s ease; 
+}
+  
+.linkedinLogoDiv 
+{
+    z-index: 5 !important;
+    position: absolute;
+    top: 210px;
+    left:30px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+  
+.linkedinLogoImg {
+width: 100%;
+height: auto;
+transition: box-shadow 0.3s ease;
+}
+  
+
+.introduction-container{
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0px;
+  width: 100%;
+  margin-right: 0px;
+}
+
+
+.introduction-container .col:last-child{
+  width:20%;
+  
+}
+.animationpart-introduction{
+  width:400px !important;
+  max-width: 400px;
+  min-width: 400px;
+}
+#introduction-heading{
+  position: relative;
+  z-index: 100;
+  font-size: 80px;
+  font-weight: 600;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  text-align: start;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 40px;
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.5s ease; /* Add a transition for smooth appearance */
+  max-width: 700px;
+}
+.visible
+{
+  background-image: conic-gradient(#ffffff, #ee4b2b, #ffffff, #553c9a);
+  transition: opacity 1s ease !important;
+  animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    scale: 0.5;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    scale: 1;
+  }
+}
+
+
+
+
+.container{ 
+  position:static;
+}
+
+
+
+.image-col{
+  display: flex;
+  justify-content: end;
+  margin:auto 120px;
+}
+
+.introduction-description{
+  position: relative;
+  z-index: 100;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 40px;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.753);
+  
+}
+
+.skills-section{
+  margin-top: 100px;
+  background-color: #e0e0e0;
+}
+
+.social-media-links{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.social-media-links img{
+  width:50px;
+
+}
+.social-media-links a{
+  margin-right:20px
+  
+}
+.skills-section{
+  display: flex;
+  justify-content: start;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.animated-skills{
+  width: 400px;
+  max-width: 400px;;
+
+}
+.skills-heading{
+  text-align: left !important;
+  position: relative;
+  z-index: 10;
+  color: black;
+  font-size: 80px;
+  margin-left: 0px;
+  font-weight: 600;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 40px;
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.5s ease; /* Add a transition for smooth appearance */
+  max-width: 300px;
+}
+
+.visible-skills
+{
+  background-image: conic-gradient(#006d00, #beac09, #000000, #19c230);
+  transition: opacity 1s ease !important;
+  animation: fadeIn 1s forwards;
+}
+
+.skillsSmoke{
+  position: absolute;
+  width:100%
+}
+
+
+.introStars{
+  filter: invert(100%);
+  width:300px;
+  position: relative;
+  z-index:3 !important;
+}
+
+.glowStar{
+  filter: grayscale(100%) contrast(1.5);
+  position: absolute;
+  width:200px;
+  z-index:2 !important;
+  left:20px;
+}
+#glowStar {
+  transition: top 0.3s ease,left 0.3s ease,opacity 0.2 ease ; /* Adjust the duration and easing function as needed */
+
+}
+.glowStarSkills{
+  filter: grayscale(100%) contrast(1.5) invert(88%);
+  position: absolute;
+  width:200px;
+  z-index:2 !important;
+  left:20px;
+}
+#glowStarSkills {
+  transition: top 0.3s ease,left 0.5s ease,opacity 0.2 ease ; /* Adjust the duration and easing function as needed */
+
+}
+
+.invert-100{
+  filter: invert(100);
+}
+.compass{
+  margin-top: 150px;
+  position: absolute;
+  z-index: 30;
+  left:-200px;
+  transform: rotate(36deg);
+  width: 400px;
+}
+.popUpCompass{
+  left:-200px;
+  transform: rotate(36deg);
+  animation: popUpCompassAnimation 1s linear;
+  transition: transform 0.3s linear;
+}
+
+.popDownCompass{
+  left:-500px;
+  transform: rotate(100deg);
+  transition: transform 0.3 ease , scale 0.3 ease, left 0.3 ease;
+  animation: popDownCompassAnimation 1s linear;
+
+}
+
+@keyframes popUpCompassAnimation {
+  0% {
+    left:-500px;
+    transform: rotate(100deg);
+    visibility: hidden;
+    
+  }
+  100% {
+    left:-200px;
+    transform: rotate(36deg);
+    visibility: visible;
+    
+  }
+}
+@keyframes popDownCompassAnimation {
+  0% {
+    
+    left:-200px;
+    transform: rotate(36deg);
+    visibility: visible;
+  }
+  100% {
+    left:-500px;
+    transform: rotate(100deg);
+    visibility: hidden;
+    
+  }
+} 
+
+
+.skills-heading-list-ul{
+  list-style: none;
+  position: relative;
+  z-index: 101;
+  margin-top: 170px;
+  margin-left: 70px;
+}
+.skills-heading-lists{
+  width:250px;
+  max-width: 250px;
+  min-width: 250px;
+  height: 60px;
+  max-height: 60px;
+  min-height: 60px;
+  display: flex;
+  justify-content: start;
+  text-align: start;
+}
+.skills-heading-lists a
+{
+  text-decoration: none;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: start;
+  transition: visibility 0.5s ease;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+
+.popDownSkillsHeading{
+  animation: popDownSkillsHeadingAnimation 1s forwards;
+}
+.popUpSkillsHeading{
+  animation: popUpSkillsHeadingAnimation 1s forwards;
+}
+
+@keyframes popUpSkillsHeadingAnimation {
+  0% {
+    left:-100px;
+    opacity: 0;
+    
+  }
+  100% {
+    left:0px;
+    opacity: 1;
+    
+  }
+}
+@keyframes popDownSkillsHeadingAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.skills-heading-Languages{
+
+}
+
+.skills-heading-Frameworks{
+      margin-top:40px;
+      margin-left: 50px;
+}
+
+.skills-heading-Databases{
+  margin-top: 80px;
+  margin-left: 50px;
+}
+
+.skills-heading-Version{
+  margin-top: 20px;
+}
+
+.skills-heading-active a{
+  font-size: 30px !important;
+  font-weight: bold !important;
+}
+.skills-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+
+}
+
+.skill-item
+{
+  width:200px !important;
+  height:250px !important;
+  text-align: center !important;
+  color: #1b1b1b;
+  background: linear-gradient(to bottom,rgb(255, 255, 255),rgba(0, 0, 0, 0.03) );
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+  margin: 20px;
+}
+
+
+.skill-item img
+{
+  width: 100px;
+  margin-bottom: 20px;
+}
+.skill-item p{
+    text-decoration: underline;
+    color: #0000008c;
+    margin-top: 30px;
+}
+
+
+.flip-card-skill-item {
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner-skill-item {
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container 
+.flip-card-skill-item:hover .flip-card-inner-skill-item {
+  transform: rotateY(180deg);
+}
+*/
+/* Position the front and back side */
+.flip-card-front-skill-item, .flip-card-back-skill-item {
+ 
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front-skill-item {
+  position: absolute;
+  overflow: hidden;
+  width: 180px;
+}
+
+
+
+
+.flip-card-back-skill-item {
+  transform: rotateY(180deg);
+  width: 180px;
+ 
+  height: 250px;
+  max-height: 230px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.flip-card-back-skill-item::-webkit-scrollbar {
+  width: 5px; /* Adjust the thickness as needed */
+}
+.flip-card-back-skill-item::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.flip-card-back-skill-item::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.flip-card-back-skill-item::-webkit-scrollbar-thumb:active {
+  background-color: #333;
+}
+
+.flip-card-back-skill-item::-webkit-scrollbar-track {
+  background-color: #f1f1f100;
+}
+.gitLogoImgSKILL{
+  width:40px !important;
+  height: 40px;
+  position: relative;
+  left:0px;
+  margin-top: 10px;
+  border-radius: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation: glowthis 0.5s infinite alternate; /* Animation for the glow effect */
+
+}
+@keyframes glowthis {
+  0% {
+    box-shadow: 0 0 10px 3px #fdff6d; /* Initial glow effect */
+  }
+  100% {
+    box-shadow: 0 0 20px 6px #67ff88; /* Stronger glow effect */
+  }
+}
+
+
+.flip-card-back-skill-item div{
+ display: flex;
+ flex-wrap: wrap;
+}
+.flip-card-back-skill-item div h3{
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px;
+  margin-right: 20px;
+  text-align: left;
+  background-color: #ffffff;
+ }
+
+ .animated-skills-heading{
+  display: none;
+ }
+ .container-skills-heading{
+  display: block;
+ }
+
+ @media (max-width: 600px) {
+  .gitLogoDiv{
+    display: none;
+  }
+  .linkedinLogoDiv{
+    display: none;
+  }
+  .introduction-description{
+    font-size: 14px;
+    line-height: normal;
+    padding: 10px;
+  }
+  .my-img{
+    width:100px !important;
+  }
+
+ }
+ 
+
+ @media (max-width: 800px) {
+
+  .image-col{
+    margin: 0px !important;
+  }
+  .animated-skills{
+    width: 100%;
+    max-width: 100%;
+  }
+  .skills-heading-list-ul{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-top: 0px;
+  }
+  .skills-heading-list-ul div{
+    margin-left: 0px !important;
+  }
+  .skills-heading-lists a{
+    font-size: 16px !important;
+  }
+  .skills-heading-active a{
+    font-size: 20px !important;
+    font-weight: bold !important ; 
+  }
+  .skills-heading-lists {
+    width: 100px;
+    max-width: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .animated-skills-heading{
+    display: block ;
+   }
+   .container-skills-heading{
+    display: none;
+   }
+  
+   .skills-heading{
+    font-size: 50px;
+    margin-left: 20px;
+   }
+
+  .animationpart-introduction{
+      display: none;
+  }
+  .introduction-heading{
+    text-align: center !important;
+  }
+
+  .introduction-heading-container{
+    width: 100% !important;
+    padding: 0px 20px;
+  }
+  .introduction-container
+  {
+    display: grid;
+  }
+  #introduction-heading{
+    font-size: 50px;
+  }
+
+  #compass{
+    display: none;
+  }
+  .skills-section{
+    display: grid;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .image-col img{
+    width: 200px !important;
+  }
+  .skills-heading-active a{
+    font-size: 20px !important;
+    font-weight: bold !important ; 
+  }
+
+
+  .animationpart-introduction{
+      display: none;
+  }
+  .introduction-heading{
+    text-align: center !important;
+  }
+
+  .introduction-heading-container{
+    width: 100% !important;
+    padding: 0px 20px;
+  }
+  .introduction-container
+  {
+    display: grid;
+    grid-template-areas: "image-col" 
+                          "introduction-heading-container";
+  }
+
+  #introduction-heading{
+    font-size: 50px;
+  }
+  .image-col{
+    grid-area: image-col;
+  }
+  
+  .introduction-heading-container{
+    grid-area: introduction-heading-container;
+  }
+}
+
+.social-media-links {
+  position: relative !important;
+  z-index: 50;
+}
+
+.image-col{
+  grid-area: image-col;
+  width: 90%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
+}
+.image-col img{
+  width: 300px;
+}
+
+.introduction-heading-container{
+  grid-area: introduction-heading-container;
+}
+

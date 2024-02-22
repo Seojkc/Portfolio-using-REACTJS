@@ -1,0 +1,345 @@
+#experience-heading{
+    text-transform: uppercase;
+    position: relative;
+    z-index: 100;
+    font-size: 80px;
+    font-weight: 600;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    text-align: start;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 40px;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.5s ease; /* Add a transition for smooth appearance */
+    background-image: conic-gradient(#58ff58, #ecfd00, #e0f8ff, #00ccff);
+    margin-top: 50px;
+    margin-left: 200px;
+    max-width: 500px;
+}
+
+
+.visible-experience
+{
+
+transition: opacity 1s ease !important;
+animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        scale: 0.5;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        scale: 1;
+    }
+}
+
+
+.experience-section{
+    margin-bottom: 50px;
+}
+
+
+  .VerticalTimeline{
+    margin-left: -100px;
+    position: relative;
+    left: -30%;
+
+}
+
+.arrow-timeline{
+    border: 0px solid black;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.644),rgba(255, 255, 255, 0.192));
+}
+
+.experience-desc-ul{
+    list-style:circle;
+    color: rgba(255, 255, 255, 0.801);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.skills-experience{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-experience h5{
+    padding: 5px;
+    color:rgb(128, 255, 128)
+
+}
+
+.experience-sub-heading{
+    color: #ecfd00;
+    left:13%;
+    position: relative;
+}
+
+.education-section{
+    background-color: #ffffff;
+    padding-bottom: 50px;
+}
+
+#education-heading{
+    text-transform: uppercase;
+    position: relative;
+    z-index: 100;
+    font-size: 80px;
+    font-weight: 600;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    text-align: start;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 40px;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.5s ease; /* Add a transition for smooth appearance */
+    background-image: conic-gradient(#58ecff, #2aff7c, #000000, #ff0000);
+    margin-top: 0px;
+    padding-top: 50px;
+    margin-left: 200px;
+    max-width: 500px;
+}
+
+
+.visible-education
+{
+
+transition: opacity 1s ease !important;
+animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        scale: 0.5;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        scale: 1;
+    }
+}
+
+.VerticalTimeline-education{
+    color:black !important
+}
+
+.skills-education{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-education h5{
+    margin:5px;
+    color: #518b04;
+}
+
+
+
+.education-desc-ul{
+    margin-top: 10px;
+    list-style:circle;
+    color: rgba(0, 0, 0, 0.801);
+    font-size: 20px;
+    line-height: 30px;
+}
+.kope{
+    color: #818181;
+}
+
+.Contact-section{
+    background-color: #000000;
+}
+
+#contact-heading{
+    text-transform: uppercase;
+    position: relative;
+    z-index: 100;
+    font-size: 80px;
+    font-weight: 600;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    text-align: start;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 40px;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.5s ease; /* Add a transition for smooth appearance */
+    background-image: conic-gradient(#eeff00, #e6e365, #b5e9a0, #00ff15);
+    margin-top: 0px;
+    padding-top: 50px;
+    margin-left: 200px;
+    max-width: 600px;
+}
+
+
+.visible-contact
+{
+
+transition: opacity 1s ease !important;
+animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        scale: 0.5;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        scale: 1;
+    }
+}
+
+
+.about-me{
+    color: white;
+}
+
+.contact-me-desc{
+    display: flex;  
+    text-align: end;
+    justify-content: center;
+
+}
+.contact-me-desc h2,h4{
+    padding: 0px 20px;
+    font-weight: lighter; 
+    color: white;
+}
+.contact-me-desc h2{
+    margin-bottom:10px;
+    font-size: 40px;
+}
+.contact-me-desc h4{
+    margin-top:15px;
+   
+}
+
+.contact-me-desc a{
+    color: rgba(255, 255, 255, 0.623);
+    margin-top: 5px !important;
+    height:50px;
+    font-size: 18px;
+}
+
+.Contact-section{
+    height: 400px;
+}
+
+
+.back-to-top{
+    width:50px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 25px;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 100px;
+    padding-left: 12px;
+    padding-top: 5px;
+    
+}
+.backtopcontainer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 95%;
+    margin-top: 20px;
+    
+}
+.backtopcontainer p{
+    font-size: 14px;
+}
+
+.back-to-top:hover{
+    animation: glow 1s infinite alternate; /* Apply the glowing animation */
+
+}
+
+
+  
+  @keyframes glow {
+    /* Define the glowing effect */
+    from {
+      transform: scale(1);
+      box-shadow: 0 0 10px #00f708; /* Set the initial shadow */
+    }
+    to {
+      transform: scale(1.2);
+      box-shadow: 0 0 30px #e5ff00; /* Set the larger shadow */
+    }
+  }
+  @media (max-width: 1200px) {
+
+    .VerticalTimeline{
+        left:0px;
+        margin-left: 5px;
+    }
+
+    .vertical-timeline-element-content{
+        left:5% !important;
+    }
+
+  }
+
+
+  @media (max-width: 800px) {
+
+    .skills-education h5,.skills-experience h5{
+        font-size: 14px;
+    }
+    .education-desc-ul, .experience-desc-ul{
+        font-size: 12px;
+    }
+
+    .VerticalTimeline{
+        left:0px;
+        margin-left: 5px;
+    }
+
+    .vertical-timeline-element-content{
+        left:5% !important;
+    }
+
+
+    .backtopcontainer{
+        display: none;
+    }
+    .contact-me-desc{
+        flex-wrap: wrap;
+    }
+    #experience-heading ,#contact-heading{
+        margin: 0px;
+        margin-left: 20px;
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    #education-heading{
+        margin-left: 20px !important;
+        margin: 0px;
+        margin-top: 20px;
+        font-size: 50px;
+      }
+
+  }
+
+
+.vertical-timeline-element-subtitle-education{
+    color: black;
+}
+ 

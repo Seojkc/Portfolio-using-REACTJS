@@ -1,0 +1,102 @@
+#education-heading{
+    text-transform: uppercase;
+    position: relative;
+    z-index: 100;
+    font-size: 80px;
+    font-weight: 600;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    text-align: start;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 40px;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.5s ease; /* Add a transition for smooth appearance */
+    background-image: conic-gradient(#58ff58, #ecfd00, #e0f8ff, #00ccff);
+    margin-top: 50px;
+    margin-left: 200px;
+    max-width: 500px;
+}
+
+
+.visible-education
+{
+
+transition: opacity 1s ease !important;
+animation: fadeIn 1s forwards;
+}
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+      scale: 0.5;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+      scale: 1;
+    }
+  }
+
+
+.education-section{
+    margin-bottom: 50px;
+}
+
+.vertical-timeline *{
+    box-sizing:border-box
+}
+.vertical-timeline
+{
+   
+    margin:0 auto;
+    position:relative;
+    padding:2em 0
+}
+
+
+  .vertical-timeline-element::before {
+    left: -7px;
+  }
+  .VerticalTimeline{
+    margin-left: -100px;
+    position: relative;
+    left: -30%;
+
+}
+
+.arrow-timeline{
+    border: 0px solid black;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.644),rgba(255, 255, 255, 0.192));
+}
+
+.education-desc-ul{
+    list-style:circle;
+    color: rgba(255, 255, 255, 0.801);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.skills-education{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-education h5{
+    padding: 5px;
+    color:rgb(128, 255, 128)
+
+}
+
+.education-sub-heading{
+    color: #ecfd00;
+    left:13%;
+    position: relative;
+}
+
+.education-section{
+    background-color: #ffffff;
+} 
+
+
