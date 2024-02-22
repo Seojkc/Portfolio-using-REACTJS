@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-link to the webpage : **seojames.webdevelopernetlify.dev/**
+link to the webpage : **[seojames.webdevelopernetlify.dev](https://seojames.webdevelopernetlify.dev/)**
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
